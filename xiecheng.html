@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 15px;
+        }
+        
+        body {
+            min-width: 320px;
+            max-width: 540px;
+            margin: 0 auto;
+            background-color: #F6F6F6;
+        }
+        
+        .search {
+            width: 100%;
+            height: 2.5rem;
+            line-height: 2.5rem;
+        }
+        
+        input {
+            width: 75%;
+            height: 1.5rem;
+            padding: 0 5px;
+            line-height: 1.5rem;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #666;
+            font-size: .86rem;
+            border: 1px solid #999;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+            margin-left: 4%;
+        }
+        
+        span {
+            padding-left: 4%;
+            color: #3D98FF;
+        }
+        
+        .top {
+            width: 100%;
+            height: 5rem;
+            background-color: red;
+            overflow: hidden;
+            position: relative;
+        }
+        /*ul li {
+            list-style: none;
+            width: 100%;
+            height: 5rem;
+            float: left;
+        }
+        
+        ul {
+            position: absolute;
+            width: 2600px;
+        }*/
+        
+        img {
+            width: 100%;
+            height: 5rem;
+        }
+        
+        .box1-1 {
+            margin-top: 1px;
+            float: left;
+            box-sizing: border-box;
+            height: 90px;
+            border: 1px solid white;
+            width: 33.33%;
+            background-color: #FF697A;
+        }
+        
+        .box2 .box1-1 {
+            background-color: #3D98FF;
+        }
+        
+        .box3 .box1-1 {
+            background-color: #44C522;
+        }
+        
+        .box4 .box1-1 {
+            background-color: #FC9720;
+        }
+        
+        p {
+            font-size: 1em;
+            color: #fff;
+            text-shadow: 0 2px 1px rgba(0, 0, 0, .2);
+            line-height: 3em;
+            text-align: center;
+            border-bottom: 1px solid #fff;
+        }
+        
+        .row {
+            width: 100%;
+        }
+        
+        .row-1 {
+            float: left;
+            box-sizing: border-box;
+            height: 4rem;
+            border: 1px solid #ccc;
+            width: 25%;
+            text-align: center;
+            line-height: 4rem;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div class="search">
+            <input type="text" name="" value="" placeholder="搜索:目的地/酒店/景点/航班号">
+            <span>我的</span>
+        </div>
+        <div class="top">
+            <ul>
+                <li><img src="image/1.jpg" alt=""></li>
+                <li><img src="image/2.jpg" alt=""></li>
+                <li><img src="image/3.jpg" alt=""></li>
+                <li><img src="image/4.jpg" alt=""></li>
+                <li><img src="image/5.png" alt=""></li>
+                <li><img src="image/6.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="box1">
+            <div class="box1-1">
+                <p>酒店</p>
+                <p></p>
+            </div>
+            <div class="box1-1">
+                <p>海外酒店</p>
+                <p>特价酒店</p>
+            </div>
+            <div class="box1-1">
+                <p>团购</p>
+                <p>民宿.客栈</p>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box1-1">
+                <p>机票</p>
+                <p></p>
+            </div>
+            <div class="box1-1">
+                <p>火车票.抢票</p>
+                <p>特价机票</p>
+            </div>
+            <div class="box1-1">
+                <p>汽车票.船票</p>
+                <p>专车.租车</p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="box1-1">
+                <p>旅游</p>
+                <p></p>
+            </div>
+            <div class="box1-1">
+                <p>目的地攻略</p>
+                <p>周边游</p>
+            </div>
+            <div class="box1-1">
+                <p>邮轮</p>
+                <p>定制旅行</p>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="box1-1">
+                <p>景点.玩乐</p>
+                <p>礼品卡</p>
+            </div>
+            <div class="box1-1">
+                <p>美食林</p>
+                <p>WiFi.电话卡</p>
+            </div>
+            <div class="box1-1">
+                <p>全球购.换汇</p>
+                <p>保险.签证</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row-1">
+                自由行
+            </div>
+            <div class="row-1">
+                微领队
+            </div>
+            <div class="row-1">
+                一日游
+            </div>
+            <div class="row-1">
+                高端游
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    // $(".top ul li:first").clone().appendTo(".top ul");
+    // var i = 0;
+
+    // function dong() {
+    //     i++;
+    //     $(".imgbox").animate({
+    //         "left": -375 * i
+    //     }, 1000, function() {
+    //         if (i > 7) {
+    //             i = 0;
+    //             $(this).css("left", 0);
+    //         }
+    //     })
+    // }
+    // setInterval(dong, 2000);
+</script>
+
+</html>
